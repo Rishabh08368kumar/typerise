@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPERISE</title>
+<link rel="icon" type="image/png" href="./newtype.png?v=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main class="app">
+
+    <h1>Typing Speed Test </h1>
+    <p class="sub">Start typing to begin the timer. you have 60 seconds.</p>
+    <!-- 3 boxes - time,wpm,accuracy -->
+     <div class="stats">
+        <div class="stat">
+            <span id ="time">60</span><small>Seconds left</small>
+        </div>
+        <div class="stat"> <span class="wpm">0</span><small>WPM</small></div>
+        <div class="stat"> <span class="accuracy">100%</span><small>Accuracy</small></div>
+     </div>
+
+     <div class="progress"><div id="bar"></div></div>
+
+     <div class="quote" id="quote"></div>
+
+     <textarea  id="input" placeholder="Type here..." autocapitalize="off" autocomplete="off" spellcheck="false"> </textarea>
+
+     <div class="actions">
+        <button id="restart"> Restart</button>
+        <button id="newtext" class="secondary">New text </button>
+     </div>
+     <div class="result" id ="result">
+        <h2>Time's up!</h2>
+        <p id="resulttext"></p>
+     </div>
+   </main>
+   <script src="logic.js"></script> 
+</body>
+</html>
